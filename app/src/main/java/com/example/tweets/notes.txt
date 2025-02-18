@@ -1,0 +1,17 @@
+ navHost is the area where the compose screens are rendered ,one by one the screens will be rendered here only
+
+nav graph is like a graph and when u are standing at a point it defines the ways where u can go from your standing point , it not like u can jump anywhere to go from a positino it is defined by developer the path in which u can go right?
+
+in order to manage the interaction between the navHost and the nav graph we use navController , navController is also used to manage the backStack
+
+when u navigate bw screens u can send data bw them u use nav arguments
+
+in navigation framework when we go from one screen to another screen what ever the arguments be the navigation framework stores the arguments on another location we use that to fetch our arguments
+
+
+scope of viewModels ********
+when i define a view model in my mainActivity then the life cycle is bound to mainActivity
+but in compose we create a view model to each screen
+then the scope of view model is bound untill that screen is visible in the navhost
+whenever the screen goes out of the ui the view model also goes away similary goes out of the memory
+viewmodesl are scope or tied to the navbackstackentry but not the viewmodels
